@@ -1,7 +1,7 @@
 /* eslint-disable no-shadow */
 /* eslint-disable max-len */
 // eslint-disable-next-line no-unused-vars
-const input = {
+const data = {
   region: {
     name: 'Africa',
     avgAge: 19.7,
@@ -30,6 +30,7 @@ const covid19ImpactEstimator = (data) => {
   } else if (periodType === 'months') {
     timeToElapse *= 30;
   }
+
   const infectionsByRequestedTime = currentlyInfected * (2 ** (Math.trunc(timeToElapse / 3)));
   const severeCasesByRequestedTime = Math.trunc(infectionsByRequestedTime * 0.15);
   const hospitalBedsByRequestedTime = Math.trunc((totalHospitalBeds * 0.35) - severeCasesByRequestedTime);
