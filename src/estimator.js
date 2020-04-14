@@ -47,7 +47,7 @@ const covid19ImpactEstimator = (data) => {
             dollarsInFlight: svDollarsInFlight
       
         }
-    }
+    };
   
 };
 
