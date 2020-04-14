@@ -1,7 +1,7 @@
 /* eslint-disable no-shadow */
 /* eslint-disable max-len */
 // eslint-disable-next-line no-unused-vars
-const data = {
+const input = {
   region: {
     name: 'Africa',
     avgAge: 19.7,
